@@ -66,7 +66,28 @@
     .icon-hover:hover {
         color: #8042D4;
     }
+	@media (max-width: 768px) {
+			.counter strong {
+				font-size: 2rem !important;
+			}
+			.counter label {
+				font-size: 1rem !important;
+			}
+			.card {
+				width: 100% !important;
+				height: auto !important;
+				padding: 15px !important;
+			}
+			.container .row .col-6 img {
+				max-width: 80px !important;
+			}
+			h1 {
+				font-size: 1.5rem !important;
+			}
+		}
 	</style>
+	
+		
 	<body>
 
 		<div class="body">
@@ -566,19 +587,19 @@
 				<section class="section section-height-5 bg-color-dark border-0 m-0">
 					<div class="container">
 						<div class="row counters text-white justify-content-center mb-5">
-							<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+							<div class="col-12 col-sm-6 col-lg-3 mb-4">
 								<div class="counter text-center">
 									<strong data-to="500" data-append="+" class="text-13 mb-1">0</strong>
 									<label class="font-weight-medium text-4-5 opacity-5">Project Complete</label>
 								</div>
 							</div>
-							<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+							<div class="col-12 col-sm-6 col-lg-3 mb-4">
 								<div class="counter text-center">
 									<strong data-to="240" data-append="+" class="text-13 mb-1">0</strong>
 									<label class="font-weight-medium text-4-5 opacity-5">Satisfied Clients</label>
 								</div>
 							</div>
-							<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
+							<div class="col-12 col-sm-6 col-lg-3 mb-4">
 								<div class="counter text-center">
 									<strong data-to="150" data-append="+" class="text-13 mb-1">0</strong>
 									<label class="font-weight-medium text-4-5 opacity-5">Testimonials</label>
@@ -586,32 +607,33 @@
 							</div>
 						</div>
 					</div>
-	
-					<div class="card" style="border-radius: 30px; background-color: white; height: 150px; width: 70%; margin: auto; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px #8042D4;">
+				
+					<div class="card text-center mx-auto d-flex align-items-center justify-content-center" 
+						style="border-radius: 30px; background-color: white; height: auto; width: 90%; max-width: 900px; padding: 20px; box-shadow: 0 0 0 5px #8042D4;">
 						<div class="container">
-							<div class="row align-items-center text-center py-5 my-4">
-								<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+							<div class="row align-items-center text-center">
+								<div class="col-6 col-sm-4 col-xl-2 mb-3">
 									<img src="img/logos/logo-8.png" alt class="img-fluid" style="max-width: 90px;" />
 								</div>
-								<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+								<div class="col-6 col-sm-4 col-xl-2 mb-3">
 									<img src="img/logos/logo-9.png" alt class="img-fluid" style="max-width: 140px;" />
 								</div>
-								<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+								<div class="col-6 col-sm-4 col-xl-2 mb-3">
 									<img src="img/logos/logo-10.png" alt class="img-fluid" style="max-width: 140px;" />
 								</div>
-								<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
+								<div class="col-6 col-sm-4 col-xl-2 mb-3">
 									<img src="img/logos/logo-11.png" alt class="img-fluid" style="max-width: 140px;" />
 								</div>
-								<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
+								<div class="col-6 col-sm-4 col-xl-2 mb-3">
 									<img src="img/logos/logo-12.png" alt class="img-fluid" style="max-width: 100px;" />
 								</div>
-								<div class="col-sm-4 col-xl-2">
+								<div class="col-6 col-sm-4 col-xl-2 mb-3">
 									<img src="img/logos/logo-13.png" alt class="img-fluid" style="max-width: 100px;" />
 								</div>
 							</div>
 						</div>
 					</div>
-	
+				
 					<div class="container mt-5">
 						<div class="row">
 							<div class="col-lg-12 text-center">
@@ -621,8 +643,8 @@
 							</div>
 						</div>
 					</div>
-					</div>
 				</section>
+				
 
 				<section class="section section-height-3 bg-color-grey border-0 m-0">
 					<div class="container">
