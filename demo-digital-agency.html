@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Demo Digital Agency | Porto - Multipurpose Website Template</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="Porto - Multipurpose Website Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Revolution Slider CSS -->
+		<link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
+
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/demos/demo-digital-agency.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-digital-agency.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+	</head>
+	<style>
+		.service-card img {
+			width: 120px;
+			height: auto;
+			border-radius: 10px; /* Jika ingin gambar memiliki sudut membulat */
+			}
+		.hover-effect {
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.hover-effect:hover {
+			transform: translateY(-10px) scale(1.02);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		}
+
+		.hover-effect img {
+			transition: transform 0.3s ease;
+		}
+
+		.hover-effect:hover img {
+			transform: rotate(-5deg) scale(1.1);
+		}
+
+		.hover-effect h5 {
+			transition: color 0.3s ease;
+		}
+
+		.hover-effect:hover h5 {
+			color: #0d6efd; /* Warna biru Bootstrap */
+		}
+
+		.hover-effect .btn {
+			transition: background-color 0.3s ease;
+		}
+
+		.hover-effect:hover .btn {
+			background-color: #0056b3; /* Warna biru lebih gelap */
+			color: white;
+		}
+		.custom-card {
+        width: 100%;
+        min-height: 120px; /* Lebih pendek */
+        border-radius: 10px; /* Membuat sudut card lebih halus */
+        padding: 15px;
+        display: flex;
+        align-items: center; /* Membuat teks sejajar */
+    }
+    
+    .testimonial-text {
+        flex: 1;
+    }
+
+    .testimonial-author {
+        margin-top: 10px;
+    }
+
+    .owl-carousel .item {
+        padding: 10px; /* Menambah jarak antar card */
+    }
+	.header-nav a.nav-link,
+.header-logo a,
+.header-social-icons a i,
+.header-nav-features-search-show-icon i,
+.header-nav-features-search-hide-icon i {
+    color: #545454 !important;
+}
+
+.testimonial-carousel .owl-stage-outer {
+    overflow: hidden;
+}
+
+.testimonial-carousel .owl-item {
+    max-width: calc(100% / 3); /* Maksimal 3 item di desktop */
+}
+
+									
+
+
+
+
+
+
+
+	</style>
+	<body>
+
+		<div class="body">
+			<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-top-0 bg-light box-shadow-none">
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="index.html">
+											<img alt="Porto" width="200" height="50" src="img/demos/digital-agency/digivise.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-links header-nav-line header-nav-bottom-line header-nav-bottom-line-active-text-light header-nav-dropdowns-dark header-nav-light-text">
+										<div class="header-nav-main header-nav-main-text-capitalize header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li style="margin-left: 10px;">
+														<a class="nav-link active" href="demo-digital-agency.html" style="font-size: 15px; ">
+															Home
+														</a>
+													</li>
+													<li style="margin-left: 10px;">
+														<a class="nav-link" href="demo-digital-agency-about.html" style="font-size: 15px; ">
+															About
+														</a>
+													</li>
+													<li style="margin-left: 10px;">
+														<a class="nav-link" href="demo-digital-agency-services.html" style="font-size: 15px; ">
+															Services
+														</a>
+													</li>
+													<li style="margin-left: 10px;">
+														<a class="nav-link" href="demo-digital-agency-work.html" style="font-size: 15px; ">
+															Work
+														</a>
+													</li>
+													<li style="margin-left: 10px;">
+														<a class="nav-link" href="Faq.html" style="font-size: 15px; ">
+															FAQ
+														</a>
+													</li>
+													<li style="margin-left: 10px;">
+														<a class="nav-link" href="Event.html" style="font-size: 15px; ">
+															Event
+														</a>
+													</li>
+													<li class="nav-item dropdown" style="margin-left: 10px; position: relative;">
+														<a class="nav-link dropdown-toggle" href="#" id="freeCourseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 15px;">
+															Free Course
+														</a>
+														<ul class="dropdown-menu" aria-labelledby="freeCourseDropdown" style="border-radius: 8px; min-width: 200px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+															<li><a class="dropdown-item" href="Podcast.html">Podcast</a></li>
+															<li><a class="dropdown-item" href="Ebook.html">E-Book</a></li>
+														</ul>
+													</li>
+													
+												</ul>
+											</nav>
+										</div>
+									</div>
+									<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean social-icons-icon-light social-icons-medium ms-5-5">
+										<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f" style="color: #D3D3D3;"></i></a></li>
+										<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-x-twitter" style="color: #D3D3D3;"></i></a></li>
+										<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in" style="color: #D3D3D3;"></i></a></li>
+									</ul>
+									
+									<button class="btn header-btn-collapse-nav ms-3 ms-sm-4" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+										<i class="fas fa-bars"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-nav-features header-nav-features-no-border p-static">
+					<div class="header-nav-feature header-nav-features-search header-nav-features-search-reveal header-nav-features-search-reveal-big-search header-nav-features-search-reveal-big-search-full">
+						<div class="container">
+							<div class="row h-100 d-flex">
+								<div class="col h-100 d-flex">
+									<form role="search" class="d-flex h-100 w-100" action="page-search-results.html" method="get">
+										<div class="big-search-header input-group">
+											<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Type and hit enter...">
+											<a href="#" class="header-nav-features-search-hide-icon"><i class="fas fa-times header-nav-top-icon"></i></a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+				<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center custom-dots-style-1 dots-light show-dots-hover show-dots-xs show-dots-sm show-dots-md nav-style-1 nav-inside nav-inside-plus nav-light nav-lg nav-font-size-lg show-nav-hover bg-color-quaternary custom-slider-container mb-0" data-plugin-options="{'autoplay': false, 'autoplayTimeout': 7000}" data-dynamic-height="['780px','780px','780px','780px','510px']" style="height: 780px;">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+
+							<!-- Carousel Slide 1 -->
+							<div class="owl-item position-relative overflow-hidden">
+								<div class="custom-circle-container d-none d-lg-flex" style="width: 100%; height: 100%; position: absolute; display: flex; justify-content: flex-end; align-items: center; padding-right: 100px; margin-left: 103px;">
+									<div class="custom-circle" style="width: 400px; height: 400px; border-radius: 50%; overflow: hidden; position: relative;">
+										<img src="img/demos/digital-agency/slides/coba.png" class="img-fluid" alt="" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" />
+									</div>
+								</div>
+								<!-- Mobile Background Image -->
+								<div class="d-lg-none position-absolute w-100 h-100">
+								</div>
+								<div class="container position-relative h-100 z-index-1 mt-4">
+									<div class="row align-items-center h-100">
+										<div class="col mb-5-5 mb-sm-0">
+											<div class="appear-animation" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="1000">
+												<h1 class="text-color-dark font-weight-bold positive-ls-3 custom-big-text-1 line-height-1 mb-0" style="font-size: calc(40px + 5vw);">DIGIVISE</h1>
+											</div>
+											<p class="text-color-dark text-4 text-sm-9 ms-2 mb-2 appear-animation font-bold" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="1200" style="font-weight: bold; line-height: 1.5;">
+												Elevate Your Business to New Heights with
+											</p>
+											<p class="text-color-dark text-4 text-sm-9 ms-2 mb-2 appear-animation font-bold" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="1200" style="font-weight: bold; line-height: 1.5; color: #8042D4; font-color: #8042D4;">
+												<span style="color: #8042D4;">Winning Digital Strategies! 🚀</span>
+											</p>
+											<span class="text-color-dark text-3 text-sm-4 ms-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="1400" style="display: block; line-height: 1.5; margin-bottom: 5px;">
+												We empower your brand to reach more customers, drive sales, and build a strong digital 
+											</span>
+											<span class="text-color-dark text-3 text-sm-4 ms-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="1400" style="display: block; line-height: 1.5; margin-bottom: 5px;">
+												presence. Stay ahead of the competition with effective, results-driven 
+											</span>
+											<span class="text-color-dark text-3 text-sm-4 ms-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="1400" style="display: block; line-height: 1.5; margin-bottom: 20px;">
+												strategies!
+											</span>
+											<button class="btn btn-modern font-weight-bold text-2 text-sm-3 px-4 px-sm-5 py-2 py-sm-3 appear-animation" 
+												data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" 
+												style="background-color: #8042D4; color: #FFFFFF; transition: transform 0.3s ease;">
+												GET STARTED NOW
+											</button>
+
+										
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Carousel Slide 2 -->
+							<div class="owl-item position-relative overflow-hidden">
+								<img src="img/demos/digital-agency/slides/slide-2-background.jpg" class="img-fluid custom-bg-slider-left" alt="" />
+								<div class="custom-svg-style-1 custom-svg-style-1-variation custom-svg-reverse svg-fill-color-dark position-absolute top-0 left-50pct transform3dx-n50 h-100 z-index-0">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 799" xml:space="preserve" preserveAspectRatio="none" width="100%" height="100%" data-plugin-float-element-svg="true">
+										<path id="svg_1" d="m803,799c-0.65,-17.51 -0.69,-41.58 2,-70c7.66,-80.82 31.97,-139.52 47,-175c30.86,-72.87 67.88,-124.83 89,-152c17.86,-22.98 84.33,-105.42 201,-174c34.75,-20.42 121.02,-67.28 243,-90c48.07,-8.95 141.2,-21.52 256,-4c123.54,18.85 208.91,62.88 228,73c21.42,11.35 38.74,22.03 51,30c0,-79 0,-158 0,-237c-640,0 -1280,0 -1920,0c0,266.33 0,532.67 0,799c267.67,0 535.33,0 803,0z" fill="#48C97F"/>
+										<circle id="svg_2" r="7.5" cy="539.5" cx="209.5" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+										<circle id="svg_3" r="12" cy="211" cx="268" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.4, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
+										<circle id="svg_4" r="17" cy="144" cx="1864" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+										<path id="svg_5" d="m982,356c24.33,-22.33 48.67,-44.67 73,-67c-1.91,-2.73 -5.1,-6.6 -10,-10c-7.11,-4.93 -13.93,-6.15 -19,-7c-5.42,-0.91 -14.32,-2.3 -25,1c-4.46,1.38 -16.54,5.83 -25,18c-5.85,8.41 -7.29,16.65 -8,21c-0.51,3.13 -1.54,9.79 0,18c2.48,13.19 10.04,22.01 14,26z" fill="#FFF" opacity="0.2" style="fill: #FFF !important;"/>
+										<circle id="svg_6" r="28.5" cy="326.74992" cx="327.75073" stroke-miterlimit="10" stroke-width="3" stroke="6CD499" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+										<circle opacity="0.2" stroke="#ffffff" id="svg_8" r="21.5" cy="340.25" cx="90.74976" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.4, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
+										<circle stroke="#ffffff" opacity="0.2" id="svg_9" r="14.625" cy="689.625" cx="128.87476" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+									</svg>								
+								</div>
+								<div class="container position-relative h-100 z-index-1 mt-4">
+									<div class="row align-items-center h-100">
+										<div class="col mb-5-5 mb-sm-0 text-end">
+											<div class="appear-animation" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="400">
+												<span class="d-block custom-stroke-text-effect-1 text-11 text-sm-15 line-height-1 positive-ls-2 font-weight-bold opacity-2 mb-1">DEVELOPMENT</span>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="600">
+												<span class="d-block custom-stroke-text-effect-1 text-11 text-sm-15 line-height-1 positive-ls-2 font-weight-bold opacity-5 mb-1">DEVELOPMENT</span>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="800">
+												<span class="d-block custom-stroke-text-effect-1 text-11 text-sm-15 line-height-1 positive-ls-2 font-weight-bold mb-1">DEVELOPMENT</span>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="1000">
+												<h1 class="text-color-light font-weight-bold positive-ls-3 text-12 text-sm-17 line-height-1 mb-3">DEVELOPMENT</h1>
+											</div>
+											<p class="text-color-primary font-weight-bold text-7 text-sm-9 ms-2 mb-0 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-appear-animation-delay="1200">to a whole new level</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="owl-nav">
+						<button type="button" role="presentation" class="owl-prev" aria-label="Previous" style="background-color: black;"></button>
+						<button type="button" role="presentation" class="owl-next" aria-label="Next" style="background-color: black;"></button>
+					</div>
+					<div class="owl-dots mb-5">
+						<button role="button" class="owl-dot active"><span></span></button>
+						<button role="button" class="owl-dot"><span></span></button>
+					</div>
+				</div>
+				<section class="section section-height-3 border-0 m-0" style="background-color: #1F1F1F;">
+				<div class="container mt-10 py-5 mb-5">
+					<div class="row counters text-white justify-content-center">
+						<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+							<div class="counter text-center">
+								<strong data-to="500" data-append="+" class="text-13 mb-1">0</strong>
+								<label class="font-weight-medium text-4-5 opacity-5">Project Complete</label>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+							<div class="counter text-center">
+								<strong data-to="240" data-append="+" class="text-13 mb-1">0</strong>
+								<label class="font-weight-medium text-4-5 opacity-5">Satisfied Clients</label>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
+							<div class="counter text-center">
+								<strong data-to="150" data-append="+" class="text-13 mb-1">0</strong>
+								<label class="font-weight-medium text-4-5 opacity-5">Testimonials</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card" style="border-radius: 30px; background-color: white; height: 150px; width: 70%; margin: auto; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px #8042D4;">
+					<div class="container">
+						<div class="row align-items-center text-center py-5 my-4">
+							<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+								<img src="img/logos/logo-8.png" alt class="img-fluid" style="max-width: 90px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+								<img src="img/logos/logo-9.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+								<img src="img/logos/logo-10.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
+								<img src="img/logos/logo-11.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
+								<img src="img/logos/logo-12.png" alt class="img-fluid" style="max-width: 100px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2">
+								<img src="img/logos/logo-13.png" alt class="img-fluid" style="max-width: 100px;" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<h1 class="text-white font-weight-bold mb-1">
+								Over 800+ <span style="color: #8042D4;">&nbsp; Business growing &nbsp;</span> with DIGIVISE
+							</h1>
+						</div>
+					</div>
+				</div>
+				
+				</section>
+				
+
+				<section class="section bg-color-grey border-0 position-relative py-0 m-0">
+
+					<div class="container-fluid">
+						<div class="row">
+							<!-- Image on the left -->
+							<div class="col-lg-6 p-0">
+								<section class="section mt-11" data-image-src="img/demos/digital-agency/generic/bapa2.png" style="min-height: 315px; background-image: url('img/demos/digital-agency/generic/bapak.png'); background-size: cover; background-position: center;">
+								</section>
+								<div class="text-center">
+									<h4 class="text-color-dark font-weight-bold mb-0">Aliefian EL islamy</h4>
+									<p class="text-color-dark opacity-7 mb-0">CEO</p>
+								</div>
+							</div>
+							
+							<!-- Text on the right -->
+							<div class="col-lg-6 p-0">
+								<div class="h-100 m-0">
+									<div class="row m-0">
+										<div class="col-half-section py-5">
+											<div class="px-3 py-10">
+												<h5 class="font-weight-bold mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200" style="color: #8042D4;">why choose us</h5>
+												<h2 class="font-weight-bold text-color-dark text-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200">Industry Expertise</h2>
+												<p class="text-4-5 line-height-7 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="400">Given that Digivise serves clients in the retail sector, it's likely  that the team has specialized knowledge and experience in addressing the unique challenges and opportunities of the retail industry,</p>
+												<p class="text-3-5 line-height-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600"> such as  inventory management, sales tracking, customer experience enhancement, and data analytics  <span class="highlight highlight-primary highlight-bg-opacity highlight-animated px-0" data-appear-animation="highlight-animated-start" data-appear-animation-delay="800" data-plugin-options="{'flagClassOnly': true}">lacinia arcu mollis ac.</span> Nulla ex enim, pellente que vitae tristique vel, porttitor in quam. </p>
+												<a href="#" class="custom-read-more d-inline-flex aling-items-center text-color-dark font-weight-bold text-decoration-none appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1000">
+													Read More
+													<img width="27" height="27" class="ms-2" src="img/demos/digital-agency/icons/arrow-right.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-dark ms-2'}" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-6 p-0">
+								<div class="h-100 m-0">
+									<div class="row m-0">
+										<div class="col-half-section col-half-section-right ms-auto py-5">
+											<div class="px-3 py-5">
+												<h5 class="font-weight-bold mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200" style="color: #8042D4;">why choose us</h5>
+												<h2 class="font-weight-bold text-color-dark text-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200">Industry Expertise</h2>
+												<p class="text-4-5 line-height-7 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="400">Given that Digivise serves clients in the retail sector, it's likely  that the team has specialized knowledge and experience in addressing the unique challenges and opportunities of the retail industry,</p>
+												<p class="text-3-5 line-height-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600"> such as  inventory management, sales tracking, customer experience enhancement, and data analytics  <span class="highlight highlight-primary highlight-bg-opacity highlight-animated px-0" data-appear-animation="highlight-animated-start" data-appear-animation-delay="800" data-plugin-options="{'flagClassOnly': true}">lacinia arcu mollis ac.</span> Nulla ex enim, pellente que vitae tristique vel, porttitor in quam. </p>
+												<a href="#" class="custom-read-more d-inline-flex aling-items-center text-color-dark font-weight-bold text-decoration-none appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1000">
+													Read More
+													<img width="27" height="27" class="ms-2" src="img/demos/digital-agency/icons/arrow-right.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-dark ms-2'}" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 p-0">
+								<section class="section mt-11" data-image-src="img/demos/digital-agency/generic/bapa2.png" style="min-height: 315px; background-image: url('img/demos/digital-agency/generic/bapa2.png'); background-size: cover; background-position: center;">
+								</section>
+								<div class="text-center">
+									<h4 class="text-color-dark font-weight-bold mb-0">Ananda Keanu</h4>
+									<p class="text-color-dark opacity-7 mb-0">COO</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					
+					
+				</section>
+
+				<section id="our-services" class="py-5 bg-color-grey">
+					<div class="container text-center">
+					  <h2 class="fw-bold">Our Services</h2>
+					  <p>We Offer a Wide Range of Services Aimed to Support your Business</p>
+				  
+					  <div class="row justify-content-center">
+						<div class="col-md-10">
+						  <!-- Digital Marketing -->
+						  <div class="service-card d-flex align-items-center p-4 mb-4 rounded hover-effect" style="background-color: #EADBFF; border: 2px solid #8042D4;">
+							<img src="img/demos/digital-agency/generic/bapak.png" alt="Digital Marketing" class="me-3">
+							<div class="text-start">
+							  <h5>Digital Marketing</h5>
+							  <p>Digivise offers comprehensive Digital Marketing services, including SEO, social media management, PPC, and content marketing.</p>
+							  <a href="#" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">See Detail Services</a>
+							</div>
+						  </div>
+				  
+						  <!-- Social Media Handling -->
+						  <div class="service-card bg-dark text-white d-flex align-items-center p-4 mb-4 rounded hover-effect">
+							<img src="https://via.placeholder.com/100" alt="Social Media Handling" class="me-3">
+							<div class="text-start">
+							  <h5 class="text-white">Social Media Handling</h5>
+							  <p>Digivise offers Social Media Handling services, creating and managing tailored content to boost engagement.</p>
+							  <a href="#" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">See Detail Services</a>
+							</div>
+						  </div>
+				  
+						  <!-- Campaign Optimization -->
+						  <div class="service-card d-flex align-items-center p-4 mb-4 rounded hover-effect" style="background-color: #EADBFF; border: 2px solid #8042D4;">
+							<img src="https://via.placeholder.com/100" alt="Campaign Optimization" class="me-3">
+							<div class="text-start">
+							  <h5>Campaign Optimization</h5>
+							  <p>Digivise provides Campaign Optimization services, refining your digital marketing strategies to maximize reach.</p>
+							  <a href="#" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">See Detail Services</a>
+							</div>
+						  </div>
+				  
+						  <!-- Optimization Online Store -->
+						  <div class="service-card bg-dark text-white d-flex align-items-center p-4 mb-4 rounded hover-effect">
+							<img src="https://via.placeholder.com/100" alt="Optimization Online Store" class="me-3">
+							<div class="text-start">
+							  <h5 class="text-white">Optimization Online Store</h5>
+							  <p>Digivise offers Online Store Optimization services, enhancing user experience, boosting conversions, and improving SEO.</p>
+							  <a href="#" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">See Detail Services</a>
+							</div>
+						  </div>
+				  
+						  <!-- IT Development -->
+						  <div class="service-card d-flex align-items-center p-4 mb-4 rounded hover-effect" style="background-color: #EADBFF; border: 2px solid #8042D4;">
+							<img src="https://via.placeholder.com/100" alt="IT Development" class="me-3">
+							<div class="text-start">
+							  <h5>IT Development</h5>
+							  <p>Digivise provides IT Development services, delivering custom software solutions and scalable applications.</p>
+							  <a href="#" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">See Detail Services</a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </section>
+				
+				  <section class="py-5 bg-dark text-white">
+					<div class="container">
+					  <h2 class="text-center mb-5 text-white">Our Program</h2>
+					  <div class="row position-relative">
+						
+						<!-- Webinar -->
+						<div class="col-md-6 d-flex align-items-center mb-4 position-relative">
+						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
+							<i class="bi bi-rocket fs-2 text-dark"></i>
+						  </div>
+						 
+						  <div class="ms-3">
+							<h5 class="fw-bold text-white">Webinar</h5>
+							<p class="mb-0">Embark on your design adventure by initiating your project. Share your vision and set the stage for a bespoke design experience.</p>
+						  </div>
+						</div>
+						
+						<!-- E-book -->
+						<div class="col-md-6 d-flex align-items-center mb-4 position-relative">
+						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
+							<i class="bi bi-book fs-2 text-dark"></i>
+						  </div>
+						 
+						  <div class="ms-3">
+							<h5 class="fw-bold text-white">E-book</h5>
+							<p class="mb-0">Embark on your design adventure by initiating your project. Share your vision and set the stage for a bespoke design experience.</p>
+						  </div>
+						</div>
+						
+						<!-- Seminar -->
+						<div class="col-md-6 d-flex align-items-center mb-4 position-relative mt-5">
+							<div class="position-absolute top-0 translate-middle bg-white" style="width: 2px; height: 160px; left: 45px;"></div>
+						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
+							<i class="bi bi-lightbulb fs-2 text-dark"></i>
+						  </div>
+						  <div class="ms-3">
+								<h5 class="fw-bold text-white">Seminar</h5>
+								<p class="mb-0">Collaborate closely to achieve design excellence refining your vision and crafting brilliance into every aspect of your space.</p>
+						  </div>
+						</div>
+						
+						<!-- Digitalks -->
+						<div class="col-md-6 d-flex align-items-center mb-4 position-relative mt-5">
+						  <div class="position-absolute top-0 translate-middle bg-white" style="width: 2px; height: 160px; left: 45px;"></div>
+						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
+							<i class="bi bi-chat-dots fs-2 text-dark"></i>
+						  </div>
+						  <div class="ms-3">
+							<h5 class="fw-bold text-white">Digitalks ( Talk with Expertise )</h5>
+							<p class="mb-0">Witness your vision becoming a reality as we execute the design plan with precision. Celebrate the joy of your newly transformed space.</p>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </section>
+				  
+
+				
+				  <section class="section section-height-3 bg-color-grey border-0 m-0">
+					<div class="container">
+						<div class="row">
+							<div class="col text-center">
+								<h2 class="text-color-dark font-weight-bold text-9 mb-4">Testimonials</h2>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-lg-12">
+								<div class="testimonial-carousel owl-carousel owl-theme">
+									
+									<!-- Testimonial Card 1 -->
+									<div class="item">
+										<div class="card bg-dark text-white border-0 shadow-sm p-4 rounded-3">
+											<blockquote class="blockquote mb-3">
+												<p class="text-light small text-truncate-2">"Setelah konsultasi, traffic website kami naik dua kali lipat. Pelayanan profesional dan ramah!"</p>
+											</blockquote>
+											<div class="d-flex align-items-center">
+												<div class="testimonial-author">
+													<h6 class="mb-0 small">Sarah L.</h6>
+													<small class="text-light">Owner Bisnis Kuliner</small>
+												</div>
+											</div>
+										</div>
+									</div>
+				
+									<!-- Testimonial Card 2 -->
+									<div class="item">
+										<div class="card bg-dark text-white border-0 shadow-sm p-4 rounded-3">
+											<blockquote class="blockquote mb-3">
+												<p class="text-light small text-truncate-2">"Setelah konsultasi, traffic website kami naik dua kali lipat. Pelayanan profesional dan ramah!"</p>
+											</blockquote>
+											<div class="d-flex align-items-center">
+												<div class="testimonial-author">
+													<h6 class="mb-0 small">Sarah L.</h6>
+													<small class="text-light">Owner Bisnis Kuliner</small>
+												</div>
+											</div>
+										</div>
+									</div>
+				
+									<!-- Testimonial Card 3 -->
+									<div class="item">
+										<div class="card bg-dark text-white border-0 shadow-sm p-4 rounded-3">
+											<blockquote class="blockquote mb-3">
+												<p class="text-light small text-truncate-2">"Setelah konsultasi, traffic website kami naik dua kali lipat. Pelayanan profesional dan ramah!"</p>
+											</blockquote>
+											<div class="d-flex align-items-center">
+												<div class="testimonial-author">
+													<h6 class="mb-0 small">Sarah L.</h6>
+													<small class="text-light">Owner Bisnis Kuliner</small>
+												</div>
+											</div>
+										</div>
+									</div>
+				
+									<!-- Testimonial Card 4 -->
+									<div class="item">
+										<div class="card bg-dark text-white border-0 shadow-sm p-4 rounded-3">
+											<blockquote class="blockquote mb-3">
+												<p class="text-light small text-truncate-2">"Setelah konsultasi, traffic website kami naik dua kali lipat. Pelayanan profesional dan ramah!"</p>
+											</blockquote>
+											<div class="d-flex align-items-center">
+												<div class="testimonial-author">
+													<h6 class="mb-0 small">Sarah L.</h6>
+													<small class="text-light">Owner Bisnis Kuliner</small>
+												</div>
+											</div>
+										</div>
+									</div>
+				
+									<!-- Testimonial Card 5 -->
+									<div class="item">
+										<div class="card bg-dark text-white border-0 shadow-sm p-4 rounded-3">
+											<blockquote class="blockquote mb-3">
+												<p class="text-light small text-truncate-2">"Setelah konsultasi, traffic website kami naik dua kali lipat. Pelayanan profesional dan ramah!"</p>
+											</blockquote>
+											<div class="d-flex align-items-center">
+												<div class="testimonial-author">
+													<h6 class="mb-0 small">Sarah L.</h6>
+													<small class="text-light">Owner Bisnis Kuliner</small>
+												</div>
+											</div>
+										</div>
+									</div>
+				
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+
+			<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- CSS -->
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 100px;
+        right: 80px;
+        width: 100px; /* Increased width */
+        height: 100px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px; /* Increased font size for icon */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+        background-color: #1100ff; /* Change hover color to red */
+    }
+</style>
+
+<!-- Font Awesome for WhatsApp Icon -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	
+
+			</div>
+
+			
+			  
+			  
+			  
+
+			<footer id="footer" class="mt-0">
+				<div class="container py-5 my-4">
+					<div class="row gy-4 justify-content-between">
+						<div class="col-lg-4 align-self-start mb-4 mb-lg-0">
+							<a href="index.html" class="text-decoration-none">
+								<img src="img/demos/digital-agency/logo1.png" width="150" height="35" class="img-fluid" alt="Footer Logo" />
+								<p class="text-3-5">
+									We empower your brand to reach more customers, drive sales, and build a strong digital presence. Stay ahead of the competition with effective, results-driven strategies!
+								</p>
+							</a>
+							<ul class="footer-social-icons social-icons social-icons-clean social-icons-icon-light social-icons-big mt-3">
+								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f text-4"></i></a></li>
+								<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-x-twitter text-4"></i></a></li>
+								<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram text-4"></i></a></li>
+							</ul>
+						</div>
+						
+						<div class="col-lg-2">
+							<h4 class="font-weight-bold text-color-light">Programs</h4>
+							<ul class="list list-unstyled mb-0">
+								<li class="mb-0">Seminar</li>
+								<li class="mb-0">Webinar</li>
+								<li class="mb-0">Bootcamp IT</li>
+								<li class="mb-0">Digitals</li>
+							</ul>
+						</div>
+						<div class="col-lg-2">
+							<h4 class="font-weight-bold text-color-light">Services</h4>
+							<ul class="list list-unstyled mb-0">
+								<li class="mb-0"><a href="index.html" class="text-decoration-none text-3-5">Digital Marketing</a></li>
+								<li class="mb-0"><a href="about.html" class="text-decoration-none text-3-5">Social Media Handling</a></li>
+								<li class="mb-0"><a href="services.html" class="text-decoration-none text-3-5">Campaign Optimization</a></li>
+								<li class="mb-0"><a href="word.html" class="text-decoration-none text-3-5">Optimization Online Store</a></li>
+								<li class="mb-0"><a href="contact.html" class="text-decoration-none text-3-5">IT Development</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3">
+							<h4 class="font-weight-bold text-color-light">Contact</h4>
+							<ul class="list list-unstyled mb-0">
+								<li class="mb-0">digiviseprimary@gmail.com <br> Jl. Banjarsari 14 No.23, Antapani Tengah, Kec. Antapani, Kota Bandung, Jawa Barat 40291</li>
+							</ul>
+							<!-- Google Map -->
+							<div class="mt-3">
+								<iframe 
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31636.55802957808!2d107.65007649999999!3d-6.897789099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e92edb9b4ef7%3A0x301e8f1fc28ba0!2sAntapani%2C%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1707072077710" 
+									width="100%" 
+									height="200" 
+									style="border:0;" 
+									allowfullscreen="" 
+									loading="lazy" 
+									rel="nofollow" 
+									referrerpolicy="no-referrer-when-downgrade">
+								</iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright bg-color-dark-100">
+					<div class="container py-2">
+						<div class="row py-4">
+							<div class="col-md-12 d-flex align-items-center justify-content-center">
+								<p class="text-color-grey text-3-5">© 2024 Digivise. All Rights Reserved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+		
+		<script>
+			$(window).on("load", function () {
+    $(".testimonial-carousel").css("opacity", "0"); // Sembunyikan dulu
+
+    setTimeout(function () {
+        $(".testimonial-carousel").owlCarousel('destroy'); // Hancurkan instance lama
+        $(".testimonial-carousel").owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 20,
+            slideBy: 1,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            autoWidth: false,
+            smartSpeed: 600, // Tambahkan efek smooth transition
+            responsive: {
+                0: { items: 1 },
+                768: { items: 2 },
+                992: { items: 3 }
+            }
+        });
+
+        $(".testimonial-carousel").fadeTo(500, 1); // Fade-in setelah carousel siap
+    }, 300); // Delay 300ms untuk memastikan layout stabil
+});
+
+
+		</script>
+		
+
+	</body>
+</html>
