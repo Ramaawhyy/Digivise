@@ -439,7 +439,48 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="container" style="width: 150%; max-width: 100%; padding: 20px;">
+
+					<div class="swiper mySwiper1">
+						<div class="swiper-wrapper">
+							
+								<div class="swiper-slide"><img src="img/logos/3.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/7.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/8.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/9.png" class="img-fluid" style="max-width: 150px;"></div>
+
+								<div class="swiper-slide"><img src="img/logos/4.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/5.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/6.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/10.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/11.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/12.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/13.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/18.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/19.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/2.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/1.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/2.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/3.png" class="img-fluid" style="max-width: 150px;"></div>	
+								<div class="swiper-slide"><img src="img/logos/20.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/1.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/21.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/22.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/23.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/24.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/14.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/15.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/16.png" class="img-fluid" style="max-width: 150px;"></div>
+								<div class="swiper-slide"><img src="img/logos/17.png" class="img-fluid" style="max-width: 150px;"></div>
+								
+						</div>
+					</div>
 				</div>
+				</div>
+			</div>
+
+				
 				<div class="container mt-5">
 					<div class="row">
 						<div class="col-lg-12 text-center">
@@ -960,6 +1001,27 @@
 				delay: 2000,   // 2 detik per slide
 				disableOnInteraction: false, // Tetap autoplay meskipun pengguna berinteraksi
 			},
+			breakpoints: {
+				576: { slidesPerView: 3 },
+				768: { slidesPerView: 4 },
+				1024: { slidesPerView: 5 }
+			}
+		});
+	});
+</script>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		var swiper = new Swiper(".mySwiper1", {
+			slidesPerView: 3,  // Jumlah gambar yang terlihat sekaligus
+			spaceBetween: 20,  // Jarak antar gambar
+			loop: true,        // Slide berulang tanpa henti
+			autoplay: {
+				delay: 2000,   // 2 detik per slide
+				disableOnInteraction: false, // Tetap autoplay meskipun pengguna berinteraksi
+				reverseDirection: true
+			},
+			
 			breakpoints: {
 				576: { slidesPerView: 3 },
 				768: { slidesPerView: 4 },
