@@ -158,6 +158,43 @@
     border: 2px solid #8042D4;
 }
 
+.thumb-info-container {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .thumb-info-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+        color: white;
+        padding: 20px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .thumb-info-button {
+        display: inline-block;
+        margin-top: 10px;
+		margin-left: 15px;
+        padding: 5px 10px;
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        border-radius: 5px;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .thumb-info-container:hover .thumb-info-button {
+        opacity: 1;
+        transform: translateY(0);
+    }
     </style>
 	<body>
 
@@ -353,12 +390,12 @@
 				<section id="faq" class="py-5">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-3"> 
+							<div class="col-lg-3">
 								<h2 class="font-weight-semi-bold text-color-dark text-5 mb-4">
-									<strong>Portofolio Ads Content</strong>
+									<strong>Ads Content</strong>
 								</h2>
 								<p>
-									We create customized videos on all platforms and activations 
+									We create customized videos on all platforms and activations
 									that differentiate brands and position them to matter in culture.
 								</p>
 								<a href="#" class="btn btn-outline-dark">View Detail </a>
@@ -367,69 +404,63 @@
 								<div class="container-fluid p-0">
 									<div class="row g-0">
 										<div class="col">
-											<div class="thumb-info-container-full-img">
-												<div class="owl-carousel p-relative right-1 owl-theme full-width m-0" data-plugin-options="{'items': 4, 'loop': false, 'nav': true, 'dots': false}">
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-12-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/1.png" class="img-fluid" alt="">
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
-													</div>
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-13-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/2.png" class="img-fluid" alt="">
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
-													</div>
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-14-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/3.gif" class="img-fluid" alt="" autoplay loop>
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
-													</div>
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-15-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/gallery-15-small.jpg" class="img-fluid" alt="">
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
-													</div>
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-13-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/gallery-13-small.jpg" class="img-fluid" alt="">
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
+											<div class="owl-carousel p-relative right-1 owl-theme full-width m-0" data-plugin-options="{'items': 4, 'loop': false, 'nav': true, 'dots': false}">
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/1.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 20px; font-weight: bold;">Azirass</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
 													</div>
 												</div>
-											</div> <!-- End of thumb-info-container-full-img -->
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/3.gif" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Lilis</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/suji.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Suji</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/jakniar.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Zacknier</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/1.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Azirass</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div> <!-- End of container-fluid -->
-							</div> <!-- End of col-lg-8 -->
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -437,83 +468,155 @@
 				<section id="faq" class="py-5">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-3"> 
+							<div class="col-lg-3">
 								<h2 class="font-weight-semi-bold text-color-dark text-5 mb-4">
-									<strong>Portofolio Social Media Handling</strong>
+									<strong>Sosial Media Handling</strong>
 								</h2>
 								<p>
-									We create customized videos on all platforms and activations 
+									We create customized videos on all platforms and activations
 									that differentiate brands and position them to matter in culture.
 								</p>
-								<a href="#" class="btn btn-outline-dark">View Detail</a>
+								<a href="#" class="btn btn-outline-dark">View Detail </a>
 							</div>
 							<div class="col-lg-9">
 								<div class="container-fluid p-0">
 									<div class="row g-0">
 										<div class="col">
-											<div class="thumb-info-container-full-img">
-												<div class="owl-carousel p-relative right-1 owl-theme full-width m-0" data-plugin-options="{'items': 4, 'loop': false, 'nav': true, 'dots': false}">
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-12-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/4.png" class="img-fluid" alt="">
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
-													</div>
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-13-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/5.png" class="img-fluid" alt="">
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
-													</div>
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-14-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/6.png" class="img-fluid" alt="" autoplay loop>
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
-													</div>
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-15-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/gallery-15-small.jpg" class="img-fluid" alt="">
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
-													</div>
-													<div>
-														<span class="thumb-info border-left p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="../img/gallery/gallery-13-large.jpg">
-															<span class="thumb-info-wrapper">
-																<img src="../img/gallery/gallery-13-small.jpg" class="img-fluid" alt="">
-																<span class="thumb-info-title">
-																	<span class="thumb-info-inner line-height-1">Project Title</span>
-																	<span class="thumb-info-type">Project Type</span>
-																</span>
-															</span>
-														</span>
+											<div class="owl-carousel p-relative right-1 owl-theme full-width m-0" data-plugin-options="{'items': 4, 'loop': false, 'nav': true, 'dots': false}">
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/8.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 20px; font-weight: bold;">Adonai</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
 													</div>
 												</div>
-											</div> <!-- End of thumb-info-container-full-img -->
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/7.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Aziras</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/61.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Portal</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/9.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Suji</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/8.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Adonai</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div> <!-- End of container-fluid -->
-							</div> <!-- End of col-lg-8 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="faq" class="py-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3">
+								<h2 class="font-weight-semi-bold text-color-dark text-5 mb-4">
+									<strong>KOL Campaign</strong>
+								</h2>
+								<p>
+									We create customized videos on all platforms and activations
+									that differentiate brands and position them to matter in culture.
+								</p>
+								<a href="#" class="btn btn-outline-dark">View Detail </a>
+							</div>
+							<div class="col-lg-9">
+								<div class="container-fluid p-0">
+									<div class="row g-0">
+										<div class="col">
+											<div class="owl-carousel p-relative right-1 owl-theme full-width m-0" data-plugin-options="{'items': 4, 'loop': false, 'nav': true, 'dots': false}">
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/10.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 20px; font-weight: bold;">Azirass</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/11.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Ede</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/10.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Azirass</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/11.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 18px; font-weight: bold;">Ede</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="thumb-info-container">
+														<img src="../img/gallery/10.png" class="img-fluid" alt="">
+														<div class="thumb-info-title">
+															
+															<span class="thumb-info-type" style="font-size: 19px; font-weight: bold;">Azirass</span>
+															<a href="#" class="thumb-info-button">View More</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
