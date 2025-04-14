@@ -51,6 +51,12 @@
 		<!-- Skin CSS -->
 		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-digital-agency.css">
 
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/demos/demo-seo-2.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-seo-2.css">
+
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css">
 
@@ -225,10 +231,17 @@
 															About
 														</a>
 													</li>
-													<li style="margin-left: 10px;">
-														<a class="nav-link" href="demo-digital-agency-services.html" style="font-size: 15px; ">
+													<li class="nav-item dropdown" style="margin-left: 10px; position: relative;">
+														<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 15px;">
 															Services
 														</a>
+														<ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="border-radius: 8px; min-width: 200px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+															<li><a class="dropdown-item" href="detail-work/market-place-handling.html">Marketplace Handling</a></li>
+															<li><a class="dropdown-item" href="demo-seo-2-services-detail.html">Store Optimization</a></li>
+															<li><a class="dropdown-item" href="detail-work/Creativemarketing.html">Creative Marketing</a></li>
+															<li><a class="dropdown-item" href="detail-work/livestreaming.html">Live Streaming</a></li>
+															<li><a class="dropdown-item" href="demo-digital-agency-services.html">IT Development</a></li>
+														</ul>
 													</li>
 													<li style="margin-left: 10px;">
 														<a class="nav-link" href="demo-digital-agency-work.html" style="font-size: 15px; ">
@@ -333,9 +346,6 @@
 												style="background-color: #8042D4; color: #FFFFFF; transition: transform 0.3s ease;">
 												GET STARTED NOW
 											</button>
-
-										
-
 										</div>
 									</div>
 								</div>
@@ -574,122 +584,156 @@
 					
 				</section>
 
+
 				<section id="our-services" class="py-5 bg-color-white">
 					<div class="container text-center">
 					  <h2 class="fw-bold">Our Services</h2>
 					  <p>We Offer Various Services Aimed at Supporting Your Business</p>
-				  
-					  <div class="row justify-content-center">
-						<div class="col-md-10">
-
-							<div class="service-card bg-dark text-white d-flex align-items-center p-4 mb-4 rounded hover-effect">
-								<img src="img/demos/digital-agency/generic/2.png" alt="Digital Marketing" class="me-3">
-								<div class="text-start">
-								  <h5 style="color: white;">Digital Marketing</h5>
-								  <p>Ensure your store appears more professional, attractive, and easily found by customers with the right optimization.</p>
-								  <a href="detail-work/market-place-handling.html" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">View Service Details</a>
-								</div>
-							  </div>
-						  <!-- Digital Marketing -->
-						  <div class="service-card d-flex align-items-center p-4 mb-4 rounded hover-effect" style="background-color: #EADBFF; border: 2px solid #8042D4;">
-							<img src="img/demos/digital-agency/generic/2.png" alt="Digital Marketing" class="me-3">
-							<div class="text-start">
-							  <h5>Store Optimization</h5>
-							  <p>Ensure your store appears more professional, attractive, and easily found by customers with the right optimization.</p>
-							  <a href="https://drive.google.com/file/d/1tGDKFr_Nkj8qRl_z-0YGLXyCWTUfQ32n/view?usp=sharing" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">View Service Details</a>
-							</div>
-						  </div>
-				  
-						  <!-- Social Media Handling -->
-						  <div class="service-card bg-dark text-white d-flex align-items-center p-4 mb-4 rounded hover-effect">
-							<img src="img/demos/digital-agency/generic/3.png" alt="Social Media Handling" class="me-3">
-							<div class="text-start">
-							  <h5 class="text-white">Creative Marketing</h5>
-							  <p>Increase brand awareness and engagement with creative marketing strategies that can attract the audience's attention.
-							</p>
-							  <a href="detail-work/Creativemarketing.html" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">View Service Details</a>
-							</div>
-						  </div>
-				  
-						  <!-- Campaign Optimization -->
-						  <div class="service-card d-flex align-items-center p-4 mb-4 rounded hover-effect" style="background-color: #EADBFF; border: 2px solid #8042D4;">
-							<img src="img/demos/digital-agency/generic/4.png" alt="Campaign Optimization" class="me-3">
-							<div class="text-start">
-							  <h5>Live Streaming</h5>
-							  <p>Maximize interaction and increase conversion with engaging and interactive live streaming sessions.</p>
-							  <a href="detail-work/livestreaming.html" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">View Service Details</a>
-							</div>
-						  </div>
-				  
-						  <!-- IT Development -->
-						  <div class="service-card d-flex align-items-center p-4 mb-4 rounded hover-effect" style="background-color: #EADBFF; border: 2px solid #8042D4;">
-							<img src="img/demos/digital-agency/generic/5.png" alt="IT Development" class="me-3">
-							<div class="text-start">
-							  <h5>IT Development</h5>
-							  <p>Digivise provides IT development services, offering scalable custom software solutions and applications.</p>
-							  <a href="https://drive.google.com/file/d/1tGDKFr_Nkj8qRl_z-0YGLXyCWTUfQ32n/view?usp=sharing" class="btn btn-primary float-start" style="background-color: #8042D4; border-color: #8042D4;">View Service Details</a>
-							</div>
-						  </div>
+					
+					<div class="container position-relative z-index-1 pb-3">
+						<div class="custom-circle custom-circle-medium custom-circle-pos-17 appear-animation" data-appear-animation="expandIn" data-appear-animation-delay="1200">
+							<div class="bg-color-quaternary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.5, 'transition': true, 'transitionDuration': 2000}"></div>	
 						</div>
-					  </div>
+						<div class="custom-circle custom-circle-small custom-circle-pos-18 appear-animation" data-appear-animation="expandIn" data-appear-animation-delay="1400">
+							<div class="custom-bg-color-grey-1 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.5, 'transition': true, 'transitionDuration': 2500}"></div>	
+						</div>
+						<div class="custom-circle custom-circle-extra-small custom-circle-pos-19 appear-animation" data-appear-animation="expandIn" data-appear-animation-delay="1600">
+							<div class="custom-bg-color-grey-2 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.5, 'transition': true, 'transitionDuration': 1000}"></div>	
+						</div>
+
+						<div class="row justify-content-center pb-2 mb-4">
+							<div class="col-md-7 col-lg-4 mb-4 mb-lg-0">
+								<div class="card border-0 custom-box-shadow-1 custom-border-radius-1 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" data-plugin-options="{'accY': -100}">
+									<div class="custom-dots-rect-3" style="background-image: url(img/demos/seo-2/dots-group-3.png);"></div>
+									<div class="card-body text-center p-5">
+										<i class="bi bi-laptop" style="font-size: 55px; color: #8042D4;"></i>
+										<h4 class="text-color-dark font-weight-semibold mb-3">Marketplace Handling</h4>
+										<p>Kelola toko online Anda di Shopee dan Tokopedia, dengan strategi terbaik, termasuk ads & CPAS untuk meningkatkan traffic dan penjualan secara efektif.</p>
+										<a href="detail-work/market-place-handling.html"" class="text-color-tertiary font-weight-bold">READ MORE +</a>
+									</div>
+								</div>
+								<div class="card border-0 custom-box-shadow-1 custom-border-radius-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-plugin-options="{'accY': -300}">
+									<div class="card-body text-center p-5">
+										<i class="bi bi-shop" style="font-size: 55px; color: #8042D4;"></i>
+										<h4 class="text-color-dark font-weight-semibold mb-3">Store Optimization</h4>
+											<p> Pastikan toko Anda tampil lebih profesional, menarik, dan mudah ditemukan pelanggan dengan optimasi yang tepat.</p>
+										<a href="demo-seo-2-services-detail.html" class="text-color-tertiary font-weight-bold">READ MORE +</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7 col-lg-4 pt-lg-4 mt-lg-5 mb-4 mb-lg-0">
+								<div class="card border-0 custom-box-shadow-1 custom-border-radius-1 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
+									<div class="card-body text-center p-5">
+										<i class="bi bi-palette" style="font-size: 55px; color: #8042D4;"></i>
+										<h4 class="text-color-dark font-weight-semibold mb-3">Creative Marketing</h4>
+										<p>Tingkatkan brand awareness dan engagement dengan strategi pemasaran kreatif yang mampu menarik perhatian audiens.</p>
+										<a href="etail-work/Creativemarketing.html" class="text-color-tertiary font-weight-bold">READ MORE +</a>
+									</div>
+								</div>
+								<div class="card border-0 custom-box-shadow-1 custom-border-radius-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">
+									<div class="card-body text-center p-5">
+										<i class="bi bi-camera-video" style="font-size: 55px; color: #8042D4;"></i>
+										<h4 class="text-color-dark font-weight-semibold mb-3">Live Streaming</h4>
+										<p>Maksimalkan interaksi dan tingkatkan konversi dengan sesi live streaming yang engaging dan interaktif.
+										</p>
+										<a href="detail-work/livestreaming.html" class="text-color-tertiary font-weight-bold">READ MORE +</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7 col-lg-4">
+								<div class="card border-0 custom-box-shadow-1 custom-border-radius-1 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1700" data-plugin-options="{'accY': -100}">
+									<div class="card-body text-center p-5">
+										<i class="bi bi-code" style="font-size: 55px; color: #8042D4;"></i>
+										<h4 class="text-color-dark font-weight-semibold mb-3">IT Development</h4>
+										<p>Solusi teknologi yang dirancang khusus untuk mendukung perkembangan bisnis digital Anda.
+										</p>
+										<a href="demo-seo-2-services-detail.html" class="text-color-tertiary font-weight-bold">READ MORE +</a>
+									</div>
+								</div>
+								<div class="card border-0 custom-box-shadow-1 custom-border-radius-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" data-plugin-options="{'accY': -100}">
+									<div class="card-body text-center p-5">
+										<i class="bi bi-clock" style="font-size: 55px; color: #8042D4;"></i>
+										<h4 class="text-color-dark font-weight-semibold mb-3">Coming Soon</h4>
+										<p>Get ready for our latest service, launching soon! Stay tuned for more information.</p>
+										<a href="" class="text-color-tertiary font-weight-bold">STAY TUNED</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="custom-circle custom-circle-big custom-circle-pos-20 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="200" data-appear-animation-duration="2s">
+							<div class="bg-color-secondary rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 1, 'transition': true, 'transitionDuration': 2000}"></div>
+						</div>
+						<div class="custom-circle custom-circle-small custom-circle-pos-21 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="700" data-appear-animation-duration="2s">
+							<div class="custom-bg-color-grey-2 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.5, 'transition': true, 'transitionDuration': 1000}"></div>
+						</div>
+						<div class="custom-circle custom-circle-medium custom-circle-pos-22 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="1200" data-appear-animation-duration="2s">
+							<div class="custom-bg-color-grey-1 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.5, 'transition': true, 'transitionDuration': 3000}"></div>
+						</div>
+						<div class="custom-circle custom-circle-extra-small custom-circle-pos-23 appear-animation" data-appear-animation="expandInWithBlur" data-appear-animation-delay="1700" data-appear-animation-duration="2s">
+							<div class="custom-bg-color-grey-2 rounded-circle w-100 h-100" data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 0.5, 'transition': true, 'transitionDuration': 1500}"></div>
+						</div>
+					</div>
+					  
 					</div>
 				  </section>
+
 				
 				  <section class="py-5 bg-dark text-white" style="margin-bottom: 100px;">
 					<div class="container">
 					  <h2 class="text-center mb-5 text-white">Our Program</h2>
 					  <div class="row position-relative">
-						
-						<!-- Webinar -->
-						<div class="col-md-6 d-flex align-items-center mb-4 position-relative">
-						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
-							<i class="bi bi-rocket fs-2 text-dark"></i>
-						  </div>
-						 
-						  <div class="ms-3">
-							<h5 class="fw-bold text-white">Webinar</h5>
-							<p class="mb-0">Embark on your design adventure by initiating your project. Share your vision and set the stage for a bespoke design experience.</p>
-						  </div>
-						</div>
-						
-						<!-- E-book -->
-						<div class="col-md-6 d-flex align-items-center mb-4 position-relative">
-						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
-							<i class="bi bi-book fs-2 text-dark"></i>
-						  </div>
-						 
-						  <div class="ms-3">
-							<h5 class="fw-bold text-white">E-book</h5>
-							<p class="mb-0">Embark on your design adventure by initiating your project. Share your vision and set the stage for a bespoke design experience.</p>
-						  </div>
-						</div>
-						
-						<!-- Seminar -->
-						<div class="col-md-6 d-flex align-items-center mb-4 position-relative mt-5">
-							<div class="position-absolute top-0 translate-middle bg-white" style="width: 2px; height: 160px; left: 45px;"></div>
-						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
-							<i class="bi bi-lightbulb fs-2 text-dark"></i>
-						  </div>
-						  <div class="ms-3">
-								<h5 class="fw-bold text-white">Seminar</h5>
-								<p class="mb-0">Collaborate closely to achieve design excellence refining your vision and crafting brilliance into every aspect of your space.</p>
-						  </div>
-						</div>
-						
+				  
 						<!-- Digitalks -->
-						<div class="col-md-6 d-flex align-items-center mb-4 position-relative mt-5">
-						  <div class="position-absolute top-0 translate-middle bg-white" style="width: 2px; height: 160px; left: 45px;"></div>
+						<div class="col-md-6 d-flex align-items-center mb-4 position-relative">
 						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
-							<i class="bi bi-chat-dots fs-2 text-dark"></i>
+							<i class="bi bi-people fs-2 text-dark"></i>
 						  </div>
 						  <div class="ms-3">
-							<h5 class="fw-bold text-white">Digitalks ( Talk with Expertise )</h5>
-							<p class="mb-0">Witness your vision becoming a reality as we execute the design plan with precision. Celebrate the joy of your newly transformed space.</p>
+							<h5 class="fw-bold text-white">Digitalks</h5>
+							<p class="mb-0">Digitalks is a regular webinar program that brings together digital marketing practitioners and experts from various industries. Here, participants can gain the latest insights, practical tips, and proven strategies directly from the experts. It is perfect for beginners to professionals who want to continue growing in the digital world.</p>
 						  </div>
 						</div>
+				  
+						<!-- BUMD (Help MSMEs from Scratch) -->
+						<div class="col-md-6 d-flex align-items-center mb-4 position-relative">
+						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
+							<i class="bi bi-bag-check fs-2 text-dark"></i>
+						  </div>
+						  <div class="ms-3">
+							<h5 class="fw-bold text-white">BUMD (Help MSMEs from Scratch)</h5>
+							<p class="mb-0">BUMD is an initiative focused on helping MSMEs grow through digital advertising strategies. We assist MSMEs from scratch in designing, running, and optimizing digital ads—so their products are more widely known, sales increase, and they can compete in the digital market.</p>
+						  </div>
+						</div>
+				  
+						<!-- E-Learning -->
+						<div class="col-md-6 d-flex align-items-center mb-4 position-relative mt-5">
+						  <div class="position-absolute top-0 translate-middle bg-white" style="width: 2px; height: 230px; left: 45px;"></div>
+						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
+							<i class="bi bi-laptop fs-2 text-dark"></i>
+						  </div>
+						  <div class="ms-3">
+							<h5 class="fw-bold text-white">E-Learning</h5>
+							<p class="mb-0">E-Learning is an online learning platform focused on digital marketing. The materials are designed to be practical and applicable, ranging from the basics to advanced topics. It is ideal for individuals, business owners, or teams who want to upgrade their skills in digital marketing.</p>
+						  </div>
+						</div>
+				  
+						<!-- Podcast -->
+						<div class="col-md-6 d-flex align-items-center mb-4 position-relative mt-5">
+						  <div class="position-absolute top-0 translate-middle bg-white" style="width: 2px; height: 230px; left: 45px;"></div>
+						  <div class="rounded-circle bg-white border border-white p-3 position-relative z-1 hover-icon">
+							<i class="bi bi-mic fs-2 text-dark"></i>
+						  </div>
+						  <div class="ms-3">
+							<h5 class="fw-bold text-white">Podcast</h5>
+							<p class="mb-0">Our podcast features casual yet insightful conversations with digital practitioners, entrepreneurs, and creators. Listen to various success stories, industry challenges, and the latest digital trends—all delivered in an easy-going and inspiring way.</p>
+						  </div>
+						</div>
+				  
 					  </div>
 					</div>
 				  </section>
+				  
+				  
 				  
 
 				
