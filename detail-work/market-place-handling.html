@@ -62,6 +62,7 @@
 
 		<!-- Skin CSS -->
 		<link id="skinCSS" rel="stylesheet" href="../css/skins/skin-digital-agency-2.css">
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
 
 
 	</head>
@@ -92,6 +93,22 @@
 		position: relative;
 		right: 50px !important; /* Menempatkan gambar 100px dari kiri */
     }
+
+	.card-hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background-color: #f0f8ff; /* Biru muda lembut, bisa diganti */
+}
+
+.card-hover:hover h4 {
+  color: #007bff; /* Biru Bootstrap */
+  transition: color 0.3s ease;
+}
 	
 }
 
@@ -115,6 +132,102 @@
     height: 20px;
     background-size: contain;
 }
+
+
+
+#brand-performance::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('path-to-overlay-image.svg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.1;
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+
+.shape-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.card-custom {
+	width: 100%;
+	min-height: 130px;
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	background-color: #fff;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+	border: 10px solid #000000;  /* Added border color */
+	
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff; /* Bisa diganti sesuai warna yang diinginkan */
+  }
+
+  .card-hover:hover h4 {
+    color: #8042D4; /* Biru Bootstrap */
+    transition: color 0.3s ease;
+  }
+
+  .card-hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  background-color: #343a40 !important;
+  color: #fff !important;
+}
+.card-hover:hover img {
+  filter: brightness(1.1);
+}
+.icon-wrapper img {
+  border: 3px solid #dee2e6;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.border-brand {
+  border: 5px solid #8042D4; /* custom turquoise */
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+
 
 
     </style>
@@ -257,129 +370,125 @@
 					
 
 				</section>
-
-				<div class="container">
+				
 					
 					<h1 class="font-weight-bold text-color-dark text-7 mb-4">MARKETPLACE OPTIMIZE</h1>
 					<hr class="mb-4">
 					<h2 class="font-weight-semi-bold text-color-dark text-5 mb-4">What We <span style="color: blueviolet;">Provide</span></h2>
 				
 					<p class="mb-4">We offer high-quality, tailored solutions designed to meet your business needs. Our team is dedicated to providing exceptional service and innovative strategies to help you achieve your goals.</p>
-					<p class="mb-4">From cutting-edge technology solutions to expert consulting, we ensure that you receive the best support to drive growth and success. Partner with us to experience excellence in every aspect of our service.</p>
-					<div class="row mb-5 pb-3">
-						<div class="col-md-6">
-							<div class="card bg-color-grey card-text-color-hover-light border-0 bg-color-hover-primary transition-2ms box-shadow-1 box-shadow-1-primary box-shadow-1-hover" style="height: 130px; margin: 10px; border-radius:30px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-2">
-											<img src="../img/digimar/1.png" class="img-fluid" alt="Card Image">
-										</div>
-										<div class="col-md-8">
-											<h4 class="card-title mb-1 text-4 font-weight-bold transition-2ms">Ads Optimization to Increase Revenue and ROAS</h4>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card bg-color-grey card-text-color-hover-light border-0 bg-color-hover-primary transition-2ms box-shadow-1 box-shadow-1-primary box-shadow-1-hover" style="height: 130px; margin: 10px; border-radius:30px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-2">
-											<img src="../img/digimar/2.png" class="img-fluid" alt="Card Image">
-										</div>
-										<div class="col-md-8">
-											<h4 class="card-title mb-1 text-4 font-weight-bold transition-2ms">Coordination with the internal brand team</h4>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card bg-color-grey card-text-color-hover-light border-0 bg-color-hover-primary transition-2ms box-shadow-1 box-shadow-1-primary box-shadow-1-hover" style="height: 130px; margin: 10px; border-radius:30px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-2">
-											<img src="../img/digimar/3.png" class="img-fluid" alt="Card Image">
-										</div>
-										<div class="col-md-8">
-											<h4 class="card-title mb-1 text-4 font-weight-bold transition-2ms">Evaluation and feedback on product description content</h4>
-												
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card bg-color-grey card-text-color-hover-light border-0 bg-color-hover-primary transition-2ms box-shadow-1 box-shadow-1-primary box-shadow-1-hover" style="height: 130px; margin: 10px; border-radius:30px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-2">
-											<img src="../img/digimar/4.png" class="img-fluid" alt="Card Image">
-										</div>
-										<div class="col-md-8">
-											<h4 class="card-title mb-1 text-4 font-weight-bold transition-2ms">Strategic Planning and Planning Board</h4>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="card bg-color-grey card-text-color-hover-light border-0 bg-color-hover-primary transition-2ms box-shadow-1 box-shadow-1-primary box-shadow-1-hover" style="height: 130px; margin: 10px; border-radius:30px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-2">
-											<img src="../img/digimar/5.png" class="img-fluid" alt="Card Image">
-										</div>
-										<div class="col-md-8">
-											<h4 class="card-title mb-1 text-4 font-weight-bold transition-2ms">Marketplace promo planning (Shopee)</h4>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card bg-color-grey card-text-color-hover-light border-0 bg-color-hover-primary transition-2ms box-shadow-1 box-shadow-1-primary box-shadow-1-hover" style="height: 130px; margin: 10px; border-radius:30px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-2">
-											<img src="../img/digimar/6.png" class="img-fluid" alt="Card Image">
-										</div>
-										<div class="col-md-8">
-											<h4 class="card-title mb-1 text-4 font-weight-bold transition-2ms">Daily Cost and Revenue Report</h4>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card bg-color-grey card-text-color-hover-light border-0 bg-color-hover-primary transition-2ms box-shadow-1 box-shadow-1-primary box-shadow-1-hover" style="height: 130px; margin: 10px; border-radius:30px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-2">
-											<img src="../img/digimar/7.png" class="img-fluid" alt="Card Image">
-										</div>
-										<div class="col-md-8">
-											<h4 class="card-title mb-1 text-4 font-weight-bold transition-2ms">Monthly Meetings</h4>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card bg-color-grey card-text-color-hover-light border-0 bg-color-hover-primary transition-2ms box-shadow-1 box-shadow-1-primary box-shadow-1-hover" style="height: 130px; margin: 10px; border-radius:30px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-2">
-											<img src="../img/digimar/8.png" class="img-fluid" alt="Card Image">
-										</div>
-										<div class="col-md-8">
-											<h4 class="card-title mb-1 text-4 font-weight-bold transition-2ms">New product research and development (optional)</h4>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
-					<p class="mb-4">Are you ready to level up or keep struggling while your competitors win? 🤯 They might already be using these strategies—it’s your turn to take over!</p>
+					<section id="brand-performance" class="py-10 bg-dark text-white" style="position: relative; overflow: hidden;">
+						<div id="tsparticles" style="position: absolute; width: 100%; height: 100%; z-index: 0;"></div>
+						<div class="container py-5 text-center" style="position: relative; z-index: 1;">
+						<div class="container py-5 text-center">
+							
+							<h2 class="font-weight-bold text-color-light text-7 mb-4">Optimize Your Brand's Performance</h2>
+
+							<p class="mb-4">Unlock your brand's full potential with our cutting-edge technology solutions and expert consulting services. Collaborate with us to achieve unparalleled success and excellence across all aspects of your business.</p>
+						  <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+							  <!-- Slide 1 -->
+							  <div class="carousel-item active">
+								<div class="row">
+								  <div class="col-lg-4">
+									<div class="featured-box text-center p-4 card-hover bg-light text-dark rounded-4 border-brand">
+									  <div class="box-content">
+										<div class="icon-wrapper mb-3 mx-auto">
+										  <img src="../img/digimar/1.png" class="rounded-circle" width="80" height="80" alt="Image">
+										</div>
+										<h4 class="fw-bold">Ads Optimization</h4>
+										<p class="mb-0">Increase revenue and ROAS with strategic ad management.</p>
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-lg-4">
+									<div class="featured-box text-center p-4 card-hover bg-light text-dark rounded-4 border-brand">
+									  <div class="box-content">
+										<div class="icon-wrapper mb-3 mx-auto">
+										  <img src="../img/digimar/2.png" class="rounded-circle" width="80" height="80" alt="Image">
+										</div>
+										<h4 class="fw-bold">Team Coordination</h4>
+										<p class="mb-0">Efficient collaboration with internal brand teams.</p>
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-lg-4">
+									<div class="featured-box text-center p-4 card-hover bg-light text-dark rounded-4 border-brand">
+									  <div class="box-content">
+										<div class="icon-wrapper mb-3 mx-auto">
+										  <img src="../img/digimar/3.png" class="rounded-circle" width="80" height="80" alt="Image">
+										</div>
+										<h4 class="fw-bold">Product Evaluation</h4>
+										<p class="mb-0">Feedback on content and product descriptions.</p>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							  </div>
+					  
+							  <!-- Slide 2 -->
+							  <div class="carousel-item">
+								<div class="row">
+								  <div class="col-lg-4">
+									<div class="featured-box text-center p-4 card-hover bg-light text-dark rounded-4 border-brand">
+									  <div class="box-content">
+										<div class="icon-wrapper mb-3 mx-auto">
+										  <img src="../img/digimar/4.png" class="rounded-circle" width="80" height="80" alt="Image">
+										</div>
+										<h4 class="fw-bold">Strategic Planning</h4>
+										<p class="mb-0">Organized planning boards and vision alignment.</p>
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-lg-4">
+									<div class="featured-box text-center p-4 card-hover bg-light text-dark rounded-4 border-brand">
+									  <div class="box-content">
+										<div class="icon-wrapper mb-3 mx-auto">
+										  <img src="../img/digimar/5.png" class="rounded-circle" width="80" height="80" alt="Image">
+										</div>
+										<h4 class="fw-bold">Promo Planning</h4>
+										<p class="mb-0">Tailored marketplace campaign strategies.</p>
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-lg-4">
+									<div class="featured-box text-center p-4 card-hover bg-light text-dark rounded-4 border-brand">
+									  <div class="box-content">
+										<div class="icon-wrapper mb-3 mx-auto">
+										  <img src="../img/digimar/6.png" class="rounded-circle" width="80" height="80" alt="Image">
+										</div>
+										<h4 class="fw-bold">Daily Report</h4>
+										<p class="mb-0">Track cost and revenue with precision reporting.</p>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							  </div>
+					  
+							  <!-- Tambahkan slide 3 jika perlu -->
+							</div>
+					  
+							<!-- Carousel controls -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#featureCarousel" data-bs-slide="prev">
+							  <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#featureCarousel" data-bs-slide="next">
+							  <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+							</button>
+						  </div>
+						</div>
+					  </section>
+					  
 				</div>
 				
-				<section id="faq" class="py-5">
+				<section id="brand-performance" class="py-5">
+					
+					
+					  
+					  
+					
+					
 					<div class="container">
 						<div class="row">
 							<div class="col">
@@ -387,7 +496,7 @@
 								<div class="row align-items-center">
 									<div class="col-sm-4">
 										<div class="pe-3 pe-sm-5 pb-3 pb-sm-0 border-right-light">
-											<h4 class="mb-2">Ads Optimization to Increase Revenue and ROAS</h4>
+											<h4 class="mb-2 text-dark">Ads Optimization to Increase Revenue and ROAS</h4>
 											<p class="m-0"><span style="color: #7ed957;">10x revenue growth</span> driven by strategic ad optimization</p>
 										</div>
 									</div>
@@ -414,78 +523,106 @@
 										</div>
 									</div>
 								</div>
+
+								
 								
 								<div class="row align-items-center">
-									<div class="col-sm-4">
-										<div class="pe-3 pe-sm-5 pb-3 pb-sm-0 border-right-light">
-											<h4 class="mb-2">Ads Optimization to Increase Revenue and ROAS</h4>
-											<p class="m-0"><span style="color: #7ed957;">4x revenue boost 
-												</span> with powerful ad optimizationion</p>
-										</div>
+									<div class="col-sm-12 text-start mb-4">
+										<h4 class="mb-2 text-dark">First month growth optimization</h4>
+										<p class="m-0"><span style="color: #7ed957;">4x revenue boost</span> with powerful ad optimization</p>
 									</div>
-									<div class="col-sm-8">
-										<!-- Bootstrap Carousel (Kedua) -->
-										<div id="beforeAfterCarousel2" class="carousel slide" data-bs-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img src="../img/generic/3.png" class="d-block w-100" alt="Before">
+									<div class="col-sm-12">
+										<!-- Before-After Image Comparison with Carousel -->
+										<div class="row">
+											<!-- Before Image Carousel -->
+											<div class="col-6">
+												<div id="beforeCarousel" class="carousel slide" data-bs-ride="carousel">
+													<h4 class="text-dark">Before</h4>
+													<div class="carousel-inner">
+														<div class="carousel-item active">
+															<img src="../img/generic/3.png" class="d-block w-100" alt="Before">
+														</div>
+														<div class="carousel-item">
+															<img src="../img/generic/3.png" class="d-block w-100" alt="Before">
+														</div>
+													</div>
+													<!-- Carousel Navigation Arrows -->
+													<button class="carousel-control-prev" type="button" data-bs-target="#beforeCarousel" data-bs-slide="prev">
+														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+														<span class="visually-hidden">Previous</span>
+													</button>
+													<button class="carousel-control-next" type="button" data-bs-target="#beforeCarousel" data-bs-slide="next">
+														<span class="carousel-control-next-icon" aria-hidden="true"></span>
+														<span class="visually-hidden">Next</span>
+													</button>
 												</div>
-												<div class="carousel-item">
-													<img src="../img/generic/4.png" class="d-block w-100" alt="After">
-												</div>
+												
 											</div>
-											<!-- Navigation Arrows -->
-											<button class="carousel-control-prev" type="button" data-bs-target="#beforeAfterCarousel2" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next" type="button" data-bs-target="#beforeAfterCarousel2" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="row align-items-center">
-									<div class="col-sm-4">
-										<div class="pe-3 pe-sm-5 pb-3 pb-sm-0 border-right-light">
-											<h4 class="mb-2">Brand Growth Performance</h4>
-											<p class="m-0">SHOPEE</p>
-										</div>
-									</div>
-									<div class="col-sm-8">
-										<!-- Bootstrap Carousel (Kedua) -->
-										<div id="beforeAfterCarousel3" class="carousel slide" data-bs-ride="carousel">
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img src="../img/generic/5.png" class="d-block w-100" alt="Before">
+								
+											<!-- After Image Carousel -->
+											<div class="col-6">
+												<div id="afterCarousel" class="carousel slide" data-bs-ride="carousel">
+													<h4 class="text-dark">After</h4>
+													<div class="carousel-inner">
+														<div class="carousel-item active">
+															<img src="../img/generic/4.png" class="d-block w-100" alt="After">
+														</div>
+														<div class="carousel-item">
+															<img src="../img/generic/4.png" class="d-block w-100" alt="After">
+														</div>
+													</div>
+													<!-- Carousel Navigation Arrows -->
+													<button class="carousel-control-prev" type="button" data-bs-target="#afterCarousel" data-bs-slide="prev">
+														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+														<span class="visually-hidden">Previous</span>
+													</button>
+													<button class="carousel-control-next" type="button" data-bs-target="#afterCarousel" data-bs-slide="next">
+														<span class="carousel-control-next-icon" aria-hidden="true"></span>
+														<span class="visually-hidden">Next</span>
+													</button>
 												</div>
-												<div class="carousel-item">
-													<img src="../img/generic/6.png" class="d-block w-100" alt="After">
-												</div>
+												
 											</div>
-											<!-- Navigation Arrows -->
-											<button class="carousel-control-prev" type="button" data-bs-target="#beforeAfterCarousel3" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next" type="button" data-bs-target="#beforeAfterCarousel3" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
 										</div>
 									</div>
 								</div>
 
+								
+								<!-- SHOPEE and CPAS Now Have Separate Before and After Cards -->
+								<div class="row align-items-center mt-4">
+									<!-- SHOPEE Section -->
+									<div class="col-sm-12 text-start mb-4">
+										<div class="pe-3 pe-sm-5 pb-3 pb-sm-0 border-right-light">
+											<h4 class="mb-2 text-dark">Brand Growth Performance</h4>
+											<p class="m-0 text-dark">SHOPEE</p>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<!-- SHOPEE Before-After Images Side by Side with Wider Images -->
+										<div class="row">
+											<!-- Before Image Card -->
+											<div class="col-12 col-md-6">
+												<h5 class="text-dark">Before</h5>
+												<img src="../img/generic/5.png" class="d-block w-100" alt="SHOPEE Before">
+											</div>
+											<!-- After Image Card -->
+											<div class="col-12 col-md-6">
+												<h5 class="text-dark">After</h5>
+												<img src="../img/generic/6.png" class="d-block w-100" alt="SHOPEE After">
+											</div>
+										</div>
+									</div>
+								</div>
+								
 								<div class="row align-items-center">
 									<div class="col-sm-4">
 										<div class="pe-3 pe-sm-5 pb-3 pb-sm-0 border-right-light">
-											<h4 class="mb-2">Brand Growth Performance</h4>
-											<p class="m-0">CPAS</p>
+											<h4 class="mb-2 text-dark">Brand Growth Performance</h4>
+											<p class="m-0 text-dark">CPAS</p>
 										</div>
 									</div>
 									<div class="col-sm-8">
-										<!-- Bootstrap Carousel (Kedua) -->
+										<!-- Before-After Carousel for CPAS -->
 										<div id="beforeAfterCarousel4" class="carousel slide" data-bs-ride="carousel">
 											<div class="carousel-inner">
 												<div class="carousel-item active">
@@ -508,9 +645,66 @@
 												<span class="visually-hidden">Next</span>
 											</button>
 										</div>
-										
 									</div>
+								</div>
+										
+							</section>
+								 
+									</div>
+
+									<!-- <div class="row align-items-center">
+									<div class="col-sm-12 text-start mb-4">
+										<h4 class="mb-2">First month growth optimization</h4>
+										<p class="m-0"><span style="color: #7ed957;">4x revenue boost</span> with powerful ad optimization</p>
+									</div>
+									<div class="col-sm-12">
+										
+										<div id="beforeAfterCarousel" class="carousel slide" data-bs-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<div class="row">
+														<div class="col-6">
+															<img src="../img/generic/3.png" class="d-block w-100" alt="Before">
+															<span class="text-center position-absolute top-50 start-50 translate-middle" style="color: white; font-weight: bold;">Before</span>
+														</div>
+														<div class="col-6">
+															<img src="../img/generic/4.png" class="d-block w-100" alt="After">
+															<span class="text-center position-absolute top-50 start-50 translate-middle" style="color: white; font-weight: bold;">After</span>
+														</div>
+													</div>
+												</div>
+												<div class="carousel-item">
+													<div class="row">
+														<div class="col-6">
+															<img src="../img/generic/3.png" class="d-block w-100" alt="Before">
+															<span class="text-center position-absolute top-50 start-50 translate-middle" style="color: white; font-weight: bold;">Before</span>
+														</div>
+														<div class="col-6">
+															<img src="../img/generic/4.png" class="d-block w-100" alt="After">
+															<span class="text-center position-absolute top-50 start-50 translate-middle" style="color: white; font-weight: bold;">After</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<button class="carousel-control-prev" type="button" data-bs-target="#beforeAfterCarousel" data-bs-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Previous</span>
+											</button>
+											<button class="carousel-control-next" type="button" data-bs-target="#beforeAfterCarousel" data-bs-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="visually-hidden">Next</span>
+											</button>
+										</div>
+									</div>
+								</div> -->
 									
+
+								<section id="faq" class="py-5">
+									<div class="container">
+										<div class="row">
+											<div class="col">
+				
 									<div class="row">
 										<div class="col">
 											<hr class="solid my-5">
@@ -518,91 +712,32 @@
 										</div>
 									</div>
 				
-								<div class="image-gallery sort-destination full-width">
-									<div class="isotope-item">
-										<div class="image-gallery-item">
-											<a href="portfolio-single-wide-slider.html" aria-label="">
-												<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-													<span class="thumb-info-wrapper">
-														<img src="../img/projects/meeting/14.png" class="img-fluid" alt="">
-														<span class="thumb-info-title">
-															<span class="thumb-info-inner">Coordination </span>
-															<span class="thumb-info-type">Monthly Meetings</span>
-														</span>
-														
-													</span>
-												</span>
-											</a>
+									<div class="owl-carousel carousel-center-active-item-3 dots-modern mt-2 mb-0" data-plugin-options="{'items': 1, 'loop': true, 'margin': 60, 'autoplay': true, 'autoplayTimeout': 4000, 'dots': false}">
+										<div>
+											<div class="img-thumbnail border-0 p-0 pb-3 d-block">
+												<img class="img-fluid border-radius-0" src="../img/projects/meeting/1.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="img-thumbnail border-0 p-0 pb-3 d-block">
+												<img class="img-fluid border-radius-0" src="../img/projects/meeting/2.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="img-thumbnail border-0 p-0 pb-3 d-block">
+												<img class="img-fluid border-radius-0" src="../img/projects/meeting/3.png" alt="">
+											</div>
+										</div>
+										<div>
+											<div class="img-thumbnail border-0 p-0 pb-3 d-block">
+												<img class="img-fluid border-radius-0" src="../img/projects/meeting/4.png" alt="">
+											</div>
 										</div>
 									</div>
-									<div class="isotope-item">
-										<div class="image-gallery-item">
-											<a href="portfolio-single-wide-slider.html" aria-label="">
-												<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-													<span class="thumb-info-wrapper">
-														<img src="../img/projects/meeting/15.png" class="img-fluid" alt="">
-														<span class="thumb-info-title">
-															<span class="thumb-info-inner">Coordination </span>
-															<span class="thumb-info-type">Monthly Meetings</span>
-														</span>
-														
-													</span>
-												</span>
-											</a>
-										</div>
-									</div>
-									<div class="isotope-item">
-										<div class="image-gallery-item">
-											<a href="portfolio-single-wide-slider.html" aria-label="">
-												<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-													<span class="thumb-info-wrapper">
-														<img src="../img/projects/meeting/16.png" class="img-fluid" alt="">
-														<span class="thumb-info-title">
-															<span class="thumb-info-inner">Coordination </span>
-															<span class="thumb-info-type">with the internal brand team</span>
-														</span>
-														
-													</span>
-												</span>
-											</a>
-										</div>
-									</div>
-									<div class="isotope-item">
-										<div class="image-gallery-item">
-											<a href="portfolio-single-wide-slider.html" aria-label="">
-												<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-													<span class="thumb-info-wrapper">
-														<img src="../img/projects/meeting/17.png" class="img-fluid" alt="">
-														<span class="thumb-info-title">
-															<span class="thumb-info-inner">Coordination </span>
-															<span class="thumb-info-type">with the internal brand team</span>
-														</span>
-														
-													</span>
-												</span>
-											</a>
-										</div>
-									</div>
-									<div class="isotope-item">
-										<div class="image-gallery-item">
-											<a href="portfolio-single-wide-slider.html" aria-label="">
-												<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-													<span class="thumb-info-wrapper">
-														<img src="../img/projects/meeting/14.png" class="img-fluid" alt="">
-														<span class="thumb-info-title">
-															<span class="thumb-info-inner">Coordination </span>
-															<span class="thumb-info-type">Monthly Meetings</span>
-														</span>
-														
-													</span>
-												</span>
-											</a>
-										</div>
-									</div>
-								</div>
-								</div>
-
-											
+				
+		
+							
+								</section>		
 					
 								
 					
@@ -612,7 +747,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				
 				
 				<div class="container">
 					
@@ -696,23 +831,33 @@
 									</div>
 								</div>
 
-								<div class="row align-items-center">
-									<div class="col-sm-4">
-										<div class="pe-3 pe-sm-5 pb-3 pb-sm-0 border-right-light">
-											<h4 class="mb-2">Before vs. After</h4>
-											<p class="m-0">See the difference before and after using our service.</p>
+								<div class="container py-5">
+									<div class="row">
+									  <div class="col">
+										<!-- Section Header with Text on the Left -->
+										<div class="row align-items-center mb-4">
+										  <div class="col-sm-4">
+											<h4 class="text-dark">Before vs. After</h4>
+											<p class="m-0 text-muted">See the difference before and after using our service.</p>
+										  </div>
 										</div>
-									</div>
-									<div class="col-sm-8">
-										<div data-plugin-before-after data-plugin-options="{'before_label': 'Before', 'after_label': 'After'}">
-											<img src="../img/generic/1,1 (1).png" />
-											<img src="../img/generic/1,1 (2).png" />
+								  
+										<!-- Before-After Image Comparison Side-by-Side -->
+										<div class="row">
+										  <!-- Before Image -->
+										  <div class="col-6">
+											<img src="../img/generic/1,1 (1).png" alt="Before" class="img-fluid" />
+										  </div>
+										  <!-- After Image -->
+										  <div class="col-6">
+											<img src="../img/generic/1,1 (2).png" alt="After" class="img-fluid" />
+										  </div>
 										</div>
+									  </div>
 									</div>
-								</div>
-								
-							</div>
-						</div>
+								  </div>
+								  
+								  
 					</div>
 				</section>
 
@@ -826,6 +971,40 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="../js/theme.init.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+		<script>
+			window.addEventListener('DOMContentLoaded', () => {
+			  tsParticles.load("tsparticles", {
+				fullScreen: { enable: false },
+				background: {
+				  color: "#212529"
+				},
+				particles: {
+				  number: { value: 60 },
+				  color: { value: "#ffffff" },
+				  shape: { type: "circle" },
+				  opacity: { value: 0.3, random: true },
+				  size: { value: 3, random: true },
+				  move: {
+					enable: true,
+					speed: 1,
+					direction: "none",
+					outModes: "bounce"
+				  }
+				},
+				interactivity: {
+				  events: {
+					onHover: { enable: true, mode: "repulse" },
+					resize: true
+				  },
+				  modes: {
+					repulse: { distance: 100 }
+				  }
+				}
+			  });
+			});
+		  </script>
+		  
 
 	</body>
 </html>
