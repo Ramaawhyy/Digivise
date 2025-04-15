@@ -216,17 +216,6 @@
   border: 5px solid #8042D4; /* custom turquoise */
 }
 
-#tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
-
-
 
 
 
@@ -371,7 +360,7 @@
 
 				</section>
 				
-					
+				<div class="container">
 					<h1 class="font-weight-bold text-color-dark text-7 mb-4">MARKETPLACE OPTIMIZE</h1>
 					<hr class="mb-4">
 					<h2 class="font-weight-semi-bold text-color-dark text-5 mb-4">What We <span style="color: blueviolet;">Provide</span></h2>
@@ -971,40 +960,8 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="../js/theme.init.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
-		<script>
-			window.addEventListener('DOMContentLoaded', () => {
-			  tsParticles.load("tsparticles", {
-				fullScreen: { enable: false },
-				background: {
-				  color: "#212529"
-				},
-				particles: {
-				  number: { value: 60 },
-				  color: { value: "#ffffff" },
-				  shape: { type: "circle" },
-				  opacity: { value: 0.3, random: true },
-				  size: { value: 3, random: true },
-				  move: {
-					enable: true,
-					speed: 1,
-					direction: "none",
-					outModes: "bounce"
-				  }
-				},
-				interactivity: {
-				  events: {
-					onHover: { enable: true, mode: "repulse" },
-					resize: true
-				  },
-				  modes: {
-					repulse: { distance: 100 }
-				  }
-				}
-			  });
-			});
-		  </script>
-		  
+
+	
 
 	</body>
 </html>
